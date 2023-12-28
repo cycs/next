@@ -2,26 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background: 0, 0%, 100%;
+    --primary: 24, 10%, 10%;
+    --secondary: 0, 4%, 35%;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--primary);
 }
+
+/*  */
+
+.colorflow-logo .logo__el {
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: 0.5s cubic-bezier(0, 0, 0.58, 1);
+}
+
+/* .colorflow-logo .logo:hover .logo__el--bigc {
+  transform: rotate(180deg);
+}
+.colorflow-logo .logo:hover .logo__el--c {
+  transform: rotate(90deg);
+}
+.colorflow-logo .logo:hover .logo__el--o1 {
+  transform: rotate(-180deg);
+}
+.colorflow-logo .logo:hover .logo__el--o2 {
+  transform: rotate(-90deg);
+}
+.colorflow-logo .logo:hover .logo__el--o3 {
+  transform: rotate(180deg);
+}
+
+.logo__small {
+  display: none;
+} */

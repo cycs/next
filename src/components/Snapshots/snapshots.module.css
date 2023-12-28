@@ -1,0 +1,27 @@
+.animationDefault {
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transform-box: fill-box;
+  -webkit-transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.colorflow-logo .logo:hover .logo__el--bigc {
+  transform: rotate(180deg);
+}
+.colorflow-logo .logo:hover .logo__el--c {
+  transform: rotate(90deg);
+}
+.colorflow-logo .logo:hover .logo__el--o1 {
+  transform: rotate(-180deg);
+}
+.colorflow-logo .logo:hover .logo__el--o2 {
+  transform: rotate(-90deg);
+}
+.colorflow-logo .logo:hover .logo__el--o3 {
+  transform: rotate(180deg);
+}
+
+.transform180 {
+  transform: rotate(180deg);
+}
